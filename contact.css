@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body, textarea, input {
+    font-family: "Poppins", sans-serif;
+}
+.contact-container {
+    min-height: 110vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: ;
+}
+.form {
+    width: 70vw;
+    height: 60vh;
+    border-radius: 10px;
+    z-index: 1000;
+    overflow: hidden;
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+}
+.contact-form {
+    background-color: #22345e;
+    z-index: 1001;
+}
+.contact-info {
+    background-color:white;
+}
+/*
+.contact-form:before {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #22345e;
+    transform: rotate(45deg);
+    left: -25px;
+    top: 75px;
+}*/
+form {
+    padding: 2.3rem 2.2rem;
+    z-index: 10;
+    overflow: hidden;
+    position: relative;
+}
+.title {
+    color: white;
+    font-size: 1.5vw;
+    margin-bottom: 1.5vh;
+}
+.input-container {
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    border: 2.5px solid white;
+    border-radius: 15px;
+    letter-spacing: 0.5px;
+}
+.name, .email {
+    height: 4vh;
+}
+.message {
+    height: 12vh;
+}
+label {
+    display: none;
+}
+.input {
+    width: 100%;
+    outline: none;
+    background: none;
+    padding: 0.5rem 1rem;
+}
+.submit-button {
+    background-color: #f7bd5e;
+    border: none;
+    padding: 1.5rem 3.5rem 1.5rem 3.5rem;
+    border-radius: 10px;
+    font-size: 1.25vw;
+    margin-top: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #22345e;
+}

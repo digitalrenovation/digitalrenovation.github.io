@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 1% 10px 3%;
+  transition: transform 0.3s ease-in;
+  transform: translateY(-5%);
+  padding: 18px 3% 12px 3%;
+}
+.item,
+.item1 {
+  display: block;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item:hover,
+.item1:hover {
+  background-color: #f1f6f9;
+}
+.item a,
+.item1 a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  border-bottom: 2px solid transparent;
+  transition: all 0.4s ease 0s;
+  color: #f1f6f9;
+  padding: 10px 25px;
+}
+.item a:hover,
+.item1 a:hover {
+  color: #344263;
+}
+header {
+  z-index: 10000000;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #152243;
+}
+.header-reg {
+  color: #344263;
+}
+.header-custom {
+  color: #22345e;
+}
+.logo,
+.dlogo {
+  cursor: pointer;
+}
+button {
+  border: none;
+  color: #152243;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  padding: 16px 26px;
+  transition: all 0.4s ease 0s;
+  border-radius: 50px;
+  z-index: 1;
+}
+button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.D {
+  color: #f1f6f9;
+  font-size: 2rem;
+  margin-right: 20vw;
+}
+.D.enabled {
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  -webkit-background-clip: text; /* Apply gradient as text fill */
+  -webkit-text-fill-color: transparent; /* Make text transparent */
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .item,
+.nav .item1 {
+  margin-right: 3vw;
+}
+.item1 {
+  margin-top: 6vh;
+}
+.pink-button {
+  background-color: #f7bd5e;
+}
+.pink-mode {
+  background-color: #cb1c8d;
+}
+/* DROP DOWN */
+/* DROP DOWN */
+/* DROP DOWN */
+.dropdown {
+  z-index: 100000000;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f1f6f9;
+  display: none;
+}
+.dropdown.enabled {
+  background-color: black;
+}
+.ditem1 {
+  margin-top: 8vh;
+}
+.ditem2 {
+  margin: auto;
+  margin-top: 8vh;
+  width: 68px;
+  height: 68px;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.dropdown.enabled .ditem2 {
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  border: none;
+  box-shadow: 0 4px 6px rgba(219, 55, 162, 0.5);
+}
+.ditem2:hover {
+  transition: 0.3s ease-in-out;
+  scale: 1.1;
+}
+.DD {
+  color: #152243;
+  font-size: 3rem !important;
+}
+.dropdown.enabled .DD {
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  -webkit-background-clip: text; /* Apply gradient as text fill */
+  -webkit-text-fill-color: transparent; /* Make text transparent */
+}
+.ditem1 a,
+.ditem a,
+.ditem2 a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  border-bottom: 2px solid transparent;
+  transition: all 0.4s ease 0s;
+  color: #152243;
+  padding: 10px 25px;
+}
+.dropdown.enabled .ditem1 a,
+.dropdown.enabled .ditem a,
+.dropdown.enabled .ditem2 a {
+  color: white;
+}
+.ditem2 a {
+  font-size: 2.5rem !important;
+}
+.ditem a:hover,
+.ditem1 a:hover {
+  color: #f7bd5e;
+}
+.dropdown.enabled .ditem a:hover,
+.dropdown.enabled .ditem1 a:hover {
+  color: #cb1c8d;
+}
+@keyframes SlideDownDropdown {
+  0% {
+    transform: translateY(0vh);
+  }
+  25% {
+    transform: translateY(25vh);
+  }
+  50% {
+    transform: translateY(50vh);
+  }
+  75% {
+    transform: translateY(75vh);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+.dropdown a {
+  width: 100%;
+  padding: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.dropdown.active {
+  display: block;
+}
+
+/* THIS IS CSS FOR CUSTOM HAMBURGER */
+.hamburger-box {
+  width: 75px;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+.hamburger-box:hover {
+  cursor: pointer;
+}
+.top-bun,
+.bottom-bun {
+  height: 2px;
+  width: 70%;
+  background-color: #f1f6f9;
+  transition: 0.1s ease-in;
+}
+.top-bun {
+  margin-bottom: 15%;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 576px) {
+  .hamburger-box {
+    width: 50px;
+  }
+  .container.active .top-bun {
+    transform: rotate(45deg) translateX(7px);
+    width: 60%;
+  }
+
+  .container.active .bottom-bun {
+    transform: rotate(-45deg) translateX(7px);
+    width: 60%;
+  }
+  .D {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .nav {
+    display: none;
+  }
+  button {
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 1025px) {
+  .nav .item,
+  .nav .item1,
+  .nav .cta {
+    display: none;
+  }
+  .hamburger-box {
+    display: block;
+  }
+}
+@media screen and (max-width: 1845px) {
+  :root {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1680px) {
+  :root {
+    font-size: 12px;
+  }
+  .logo .D,
+  .dlogo .D {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 1500px) {
+  :root {
+    font-size: 10px;
+  }
+  .logo .D,
+  .dlogo .D {
+    font-size: 2.5rem;
+  }
+}

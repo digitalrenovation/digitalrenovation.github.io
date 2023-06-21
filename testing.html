@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!---Custom CSS Link-->
+
+    <!---Google Font Links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;1,400;1,500;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--boxicons link-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!--Remixicon link-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .hero {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);*/
+        background-color: #ffdee9;
+        background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+      }
+      .animation {
+        display: flex;
+        justify-content: center;
+        height: 9%;
+        overflow: hidden;
+      }
+      .animation h1 {
+        font-size: 3.5rem;
+      }
+      .sliding-words {
+        height: 39.5vh;
+        margin: 0 12px 0 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        animation-name: SlideDown;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+      }
+      .sliding-words h1 {
+        margin: auto;
+        color: #adefd1ff;
+      }
+      .darkgreen {
+        color: rgb(7, 37, 68);
+      }
+      @keyframes SlideDown {
+        0% {
+          transform: translateY(-30vh);
+        }
+        10% {
+          transform: translateY(-30vh);
+        }
+        32.5% {
+          transform: translateY(-20vh);
+        }
+        55% {
+          transform: translateY(-10vh);
+        }
+        77.5% {
+          transform: translateY(0vh);
+        }
+        100% {
+          transform: translateY(-30vh);
+        }
+      }
+      @media screen and (max-width: 1065px) {
+        html {
+          font-size: 12px;
+        }
+        .sliding-words {
+          height: 38vh;
+        }
+        @keyframes SlideDown {
+          0% {
+            transform: translateY(-30vh);
+          }
+          10% {
+            transform: translateY(-30vh);
+          }
+          32.5% {
+            transform: translateY(-20.5vh);
+          }
+          55% {
+            transform: translateY(-11vh);
+          }
+          77.5% {
+            transform: translateY(-1.5vh);
+          }
+          100% {
+            transform: translateY(-30vh);
+          }
+        }
+      }
+      @media screen and (max-width: 800px) {
+        html {
+          font-size: 10px;
+        }
+        .sliding-words {
+          height: 37.2vh;
+        }
+        @keyframes SlideDown {
+          0% {
+            transform: translateY(-30vh);
+          }
+          10% {
+            transform: translateY(-30vh);
+          }
+          32.5% {
+            transform: translateY(-20.5vh);
+          }
+          55% {
+            transform: translateY(-11vh);
+          }
+          77.5% {
+            transform: translateY(-2vh);
+          }
+          100% {
+            transform: translateY(-30vh);
+          }
+        }
+      }
+      @media screen and (max-width: 550px) {
+        html {
+          font-size: 8px;
+        }
+        .animation {
+          height: 5.5%;
+        }
+        .sliding-words {
+          height: 37vh;
+        }
+        @keyframes SlideDown {
+          0% {
+            transform: translateY(-30vh);
+          }
+          10% {
+            transform: translateY(-30vh);
+          }
+          32.5% {
+            transform: translateY(-21vh);
+          }
+          55% {
+            transform: translateY(-11.5vh);
+          }
+          77.5% {
+            transform: translateY(-2vh);
+          }
+          100% {
+            transform: translateY(-30vh);
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="hero">
+        <div class="animation">
+          <div><h1 class="darkgreen">Creating</h1></div>
+          <div class="sliding-words">
+            <h1>Fantastic</h1>
+            <h1>Beautiful</h1>
+            <h1>Unique</h1>
+            <h1 class="nudge">Appealing</h1>
+          </div>
+          <div><h1 class="darkgreen">Digital Solutions</h1></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

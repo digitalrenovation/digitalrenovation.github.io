@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!---Custom CSS Link-->
+    <link rel="stylesheet" href="bottom.css">
+    <link rel="stylesheet" href="nav-bar.css">
+
+    <!---Google Font Links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!--boxicons link-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!--Remixicon link-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+    <!--Custom Js link-->
+    <script src="script.js"></script>
+    <section class="nav-bar">
+            <header class="header">
+                <!--<img src="./images/logo.png" alt="logo" class="logo-img">-->
+                <div class="logo">
+                    <h2><a href="index.html" class="D">Digital</a></h2>
+                    <h2><a href="index.html" class="R">Renovation</a></h2>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-links">
+                        <!--<li><a href="#">Home</a></li>-->
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="#">Log in</a></li>
+                    </ul>
+                </nav>
+                <a class='cta' href="#"><button>Request Quote</button></a>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </header>
+            <script>
+                window.addEventListener("DOMContentLoaded", function() {
+                    var hamburger = document.querySelector(".hamburger");
+                    var navBar = document.querySelector(".header");
+
+                    hamburger.addEventListener("click", function() {
+                    navBar.classList.toggle("active");
+                    });
+                });
+            </script>
+    </section>
+<section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <!--<div class="break"></div>-->
+                    <ul>
+                        <li><a href="#">Hi</a></li>
+                        <li><a href="#">Hi</a></li>
+                        <li><a href="#">Hi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Example</h4>
+                    <ul>
+                        <li><a href="#">Hi</a></li>
+                        <li><a href="#">Hi</a></li>
+                        <li><a href="#">Hi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Example</h4>
+                    <ul>
+                        <li><a href="#">Hi</a></li>
+                        <li><a href="#">Hi</a></li>
+                        <li><a href="#">Hi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!---Custom CSS Link-->
+    <link rel="stylesheet" href="bottom.css" />
+    <link rel="stylesheet" href="nav-bar copy.css" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!---Google Font Links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;1,400;1,500;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--boxicons link-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!--Remixicon link-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <header>
+        <div class="container">
+          <div class="logo">
+            <h2><a href="index.html" class="D">Digital Renovation</a></h2>
+          </div>
+          <div class="nav">
+            <div class="item"><a href="services.html">Services</a></div>
+            <div class="item"><a href="pricing.html">Pricing</a></div>
+            <div class="item"><a href="team.html">Our Team</a></div>
+            <div>
+              <a class="cta" href="#"><button>Request Quote</button></a>
+            </div>
+          </div>
+          <!--<div class="toggle">
+                    <i class="fa-solid fa-bars" style="color: #f1f6f9;"></i>
+                </div>-->
+          <div class="hamburger-box">
+            <div class="top-bun"></div>
+            <div class="middle-bun"></div>
+            <div class="bottom-bun"></div>
+          </div>
+        </div>
+      </header>
+    </section>
+    <div class="dropdown">
+      <div class="dropdown-container">
+        <div class="dropdown-logo">
+          <h2><a href="index.html" class="DD">Digital Renovation</a></h2>
+        </div>
+      </div>
+      <div class="ditem1"><a href="services.html">Services</a></div>
+      <div class="ditem"><a href="pricing.html">Pricing</a></div>
+      <div class="ditem"><a href="team.html">Our Team</a></div>
+      <div class="ditem"><a href="team.html">Request Quote</a></div>
+      <div class="ditem2">
+        <a href="#"
+          ><i class="bx bx-expand-vertical" style="color: #152243"></i
+        ></a>
+      </div>
+    </div>
+    <div class="heading-block">
+      <div class="gradiant-header">
+        <h1>
+          <span class="top-line"><h1>Committed to Creating</h1></span>
+          <span class="middle-line">
+            <div class="sliding-words">
+              <h1>Fantastic</h1>
+              <h1>Beautiful</h1>
+              <h1>Unique</h1>
+              <h1 class="nudge">Appealing</h1>
+            </div>
+          </span>
+          <span class="bottom-line"><h1>Digital Solutions</h1></span>
+        </h1>
+      </div>
+      <div class="explore-button"><a href="#">Explore More</a></div>
+    </div>
+    <section>
+      <footer class="footer">
+        <div class="fcontainer">
+          <div class="row">
+            <div class="footer-col">
+              <h4>Company</h4>
+              <!--<div class="break"></div>-->
+              <ul>
+                <li><a href="#">Hi</a></li>
+                <li><a href="#">Hi</a></li>
+                <li><a href="#">Hi</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Example</h4>
+              <ul>
+                <li><a href="#">Hi</a></li>
+                <li><a href="#">Hi</a></li>
+                <li><a href="#">Hi</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Example</h4>
+              <ul>
+                <li><a href="#">Hi</a></li>
+                <li><a href="#">Hi</a></li>
+                <li><a href="#">Hi</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Follow Us</h4>
+              <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Youtube</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        var hamburger = document.querySelector(".hamburger-box");
+        var dropdown_menu = document.querySelector(".dropdown");
+        var button = document.querySelector(".explore-button");
+        var exitbutton = document.querySelector(".ditem2");
+
+        button.addEventListener("click", function () {
+          window.scrollTo(1000);
+        });
+
+        exitbutton.addEventListener("click", function () {
+          dropdown_menu.classList.toggle("active");
+          document.body.style.overflow = "auto";
+        });
+
+        hamburger.addEventListener("click", function () {
+          dropdown_menu.classList.toggle("active");
+          document.body.style.overflow = "hidden";
+        });
+      });
+    </script>
+  </body>
+</html>

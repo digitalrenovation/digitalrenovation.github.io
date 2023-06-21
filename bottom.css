@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+/*------------------------------ FOOTER CSS (INCOMPLETE) -------------------------*/
+.footer {
+  width: 100%;
+  height: 80vh;
+  background-color: white;
+  /*padding: 60px 0;*/
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+}
+.height-fixer {
+  width: 100%;
+  height: auto;
+  background-color: #152243;
+}
+.footer.enabled .height-fixer {
+  background-color: black;
+}
+.fcontainer {
+  width: 100%;
+  height: 40vh;
+  margin: 0 auto 0 auto;
+  background-color: #152243;
+  z-index: 1;
+  border-radius: 6px;
+}
+.footer.enabled .fcontainer {
+  background-color: black;
+}
+.footer-row {
+  width: 70%;
+  margin: auto;
+  background-color: #152243;
+  margin-top: 14vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer.enabled .footer-row {
+  background-color: black;
+}
+.footer-col {
+  width: 33.333%;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 5vh;
+}
+.footer-col h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5vh;
+  font-weight: 450;
+  color: white;
+}
+.footer-col h3 {
+  font-size: 1.3rem;
+  font-weight: 450;
+  margin-bottom: 0.2vh;
+  color: #c6ccd8;
+}
+@media screen and (max-width: 768px) {
+  .footer-col {
+    width: 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-col {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+}
+
+/*MAIL BOX CSSS */
+
+.mail-box {
+  position: absolute;
+  top: 8vh;
+  right: 50%;
+  transform: translateX(50%);
+  height: 40vh;
+  width: 60vw;
+  background-color: #f7bd5e;
+  z-index: 10000;
+  border-radius: 6px;
+}
+.footer.enabled .mail-box {
+  background-color: rgb(13, 12, 13);
+}
+.mail-box-header {
+  margin-top: 8vh;
+  font-size: 3.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  color: #22345e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer.enabled .mail-box-header {
+  color: #cb1c8d;
+}
+.mail-box-text {
+  width: 40%;
+  margin: auto;
+  margin-top: 2vh;
+  font-size: 1.125rem;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  font-weight: 400;
+  color: #22345e;
+}
+.footer.enabled .mail-box-text {
+  color: white;
+}
+.email-form-parent {
+  width: 50%;
+  height: 8vh;
+  margin: auto;
+  margin-top: 4.5vh;
+  display: flex;
+  justify-content: space-between;
+}
+.email-box {
+  width: 69.5%;
+  height: 100%;
+  border-radius: 8px;
+  background-color: #c6ccd8;
+  opacity: 0.3;
+}
+.footer.enabled .email-box {
+  background-color: #cb1c8d;
+  color: white;
+}
+.email-button {
+  width: 27.5%;
+  height: 100%;
+  border-radius: 8px;
+  background-color: #22345e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.footer.enabled .email-button {
+  background-color: #cb1c8d;
+}
+.email-button h1 {
+  color: #f7bd5e;
+  font-size: 1.3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.footer.enabled .email-button h1 {
+  color: white;
+}
+.input {
+  border: none;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+}
+@media screen and (max-width: 1024px) {
+  .mail-box {
+    width: 70vw;
+  }
+  .input {
+    font-size: 1.2rem;
+  }
+  .email-button h1 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 740px) {
+  .mail-box {
+    width: 80vw;
+  }
+  .email-form-parent {
+    width: 60%;
+  }
+  .mail-box-text {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .mail-box {
+    width: 90vw;
+    height: 35vh;
+  }
+  .email-form-parent {
+    width: 80%;
+  }
+  .mail-box-header {
+    font-size: 3rem;
+  }
+  .mail-box-text {
+    font-size: 1.1rem;
+    width: 65%;
+  }
+}
+/* -------------------------- PRICING PAGE CSS --------------------------------*/
+.hero {
+  width: 100%;
+}
+.prow {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+.top-pricing-text {
+  height: 12vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  margin-bottom: 50px;
+}
+.top-pricing-text h1 {
+  font-weight: 700;
+  color: #212a3e;
+  font-size: 38px;
+}
+.top-pricing-text h4 {
+  color: rgb(14, 13, 13);
+  font-size: 22px;
+  font-weight: 700;
+}
+.title-text {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 10px 0;
+  font-size: 36px;
+}
+.col {
+  width: 300px;
+  height: 500px;
+  margin: 50px 60px 50px 60px;
+  border-radius: 14px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.col h1 {
+  margin-top: 30px;
+  font-size: 36px;
+  color: rgb(15, 14, 14);
+}
+.rounded-top1,
+.rounded-top2,
+.rounded-top3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3%;
+}
+
+.rounded-top1 {
+  background-color: #9ba4b5;
+  border-radius: 14px 14px 0 0;
+  margin-bottom: 20px;
+}
+
+.rounded-top2 {
+  background-color: #212a3e;
+  border-radius: 14px 14px 0 0;
+}
+
+.rounded-top3 {
+  background-color: #1d267d;
+  border-radius: 14px 14px 0 0;
+}
+.italized {
+  font-style: italic;
+  font-weight: normal;
+}
+hr {
+  width: 51%;
+  margin: auto;
+  margin-top: 20px;
+  color: #9ba4b5;
+  border-style: solid;
+}
+@media screen and (max-width: 1444px) {
+}
+@media screen and (max-width: 1024px) {
+  .col {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .top-pricing-text h1 {
+    font-size: 34px;
+  }
+  .col {
+    margin: 25px 0 25px 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .prow {
+    width: 100%;
+  }
+  .col {
+    margin: 25px 0 25px 0;
+  }
+  .top-pricing-text {
+    margin-top: 10vh;
+  }
+  .top-pricing-text h1 {
+    font-size: 22px;
+  }
+}
