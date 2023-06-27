@@ -7,14 +7,101 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+
+/*ALL DARKMODE CSS*/
+.dark {
+  display: none;
+}
+body.enabled .pink-button {
+  color: white;
+}
+body.enabled .dark {
+  display: block;
+}
 body.enabled {
-  background-color: rgba(0, 0, 0, 0.96);
+  background-color: #0c0c0d;
+}
+body.enabled .title-text h1 {
+  color: white;
+}
+body.enabled .col {
+  background-color: white;
+  border: none;
+}
+body.enabled .light {
+  display: none;
+}
+body.enabled .gradiant-header h1 {
+  /*this applies when the color gets changed*/
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.location-block.enabled {
+  background-color: black;
+}
+body.enabled .services-button {
+  background-color: #cb1c8d;
+}
+body.enabled .service-block {
+  background-color: #0c0c0d;
+}
+body.enabled .team-block {
+  background-color: black;
+}
+.heading-block.enabled {
+  background-color: #0c0c0d;
+}
+body.enabled .mail-box {
+  border: black 4px solid;
+  background-color: #171719;
+}
+body.enabled .team-col {
+  background-color: #c6ccd8;
+}
+body.enabled .team-col:hover {
+  background: linear-gradient(to left, #12c2e9, #c471ed, #f64f59);
+}
+body.enabled .map-container {
+  background-color: #c6ccd8;
+  background-color: #152243;
+}
+.footer.enabled .mail-box-text {
+  color: white;
+}
+.map {
+  box-shadow: 0 5px 10px rgba(0 0 0 / 0.5);
+}
+body.enabled .map {
+  box-shadow: 2px 5px 10px rgba(0 0 0 / 0.8);
+}
+body.enabled .uno {
+  background-color: #12c2e9;
+}
+body.enabled .dos {
+  background-color: #c471ed;
+}
+body.enabled .tres {
+  background-color: #f64f59;
+}
+.footer.enabled {
+  background-color: #0c0c0d;
+}
+.footer.enabled .height-fixer {
+  background-color: black;
+}
+.footer.enabled .email-button h1 {
+  color: white;
+}
+.footer.enabled .email-box {
+  background-color: #cb1c8d;
+  color: white;
 }
 /* HEADING CSS*/
 .heading-block {
   z-index: 1;
   height: 100vh;
-  background-color: whitesmoke;
+  background-color: white;
 }
 .gradiant-header {
   z-index: 1;
@@ -39,11 +126,6 @@ body.enabled {
   /*background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);*/
   -webkit-background-clip: text; /* Apply gradient as text fill */
   -webkit-text-fill-color: transparent; /* Make text transparent */
-}
-.gradiant-header.enabled h1 { /*this applies when the color gets changed*/
-  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .top-line h1,
 .middle-line h1,
@@ -82,6 +164,17 @@ body.enabled {
   font-size: 1.7rem;
   font-family: "Poppins", sans-serif;
 }
+
+.heading-underscore {
+  width: 20%;
+  height: 3px;
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 5vh;
+  margin-top: 1.5vh;
+}
+
 /* RESPONSIVE DESIGN */
 @media screen and (max-width: 1500px) {
   .gradiant-header {
@@ -210,9 +303,6 @@ body.enabled {
   border-radius: 10px;
   background-color: #22345e;
 }
-.location-block.enabled {
-  background-color: black;
-}
 .location-container {
   display: flex;
   flex-direction: column;
@@ -238,7 +328,7 @@ body.enabled {
   margin-left: 8vw;
   margin-bottom: 10vh;
   border-radius: 20px;
-  background-color: #74a2e3;
+  background-color: #6581ae;
 }
 .map {
   width: 100%;
@@ -248,28 +338,27 @@ body.enabled {
 /* SERVICES BLOCK */
 .service-block {
   width: 100%;
-  height: 100vh;
+  height: 90vh !important;
   height: auto;
   background-color: white;
-}
-.service-block.enabled {
-  background-color: #000000F5;
 }
 .row {
   width: 90%;
   height: auto;
   margin: auto;
   flex-wrap: wrap;
+  margin-top: 6vh;
+  margin-bottom: 3vh;
 }
 .col {
   width: 40vh;
   height: 40vh;
-  margin: 2vh 10px 2vh 10px;
+  margin: 2vh 20px 2vh 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  background-color: #e0e0e0;
+  background-color: #c6ccd8;
   transition: all 0.4s ease 0s;
 }
 .col h1 {
@@ -283,26 +372,33 @@ body.enabled {
   box-shadow: 0 5px 10px rgba(52 66 99 / 0.2);
   transition: all 0.4s ease 0s;
 }
+.col:hover .primary h1 {
+  transition: all 0.4s ease 0s;
+  font-size: 2.22rem;
+}
 .primary h1 {
-  color: #212a3e;
+  transition: all 0.4s ease 0s;
+  color: #152243;
+  color: #152243;
   font-size: 2rem;
 }
 .img {
-  height: 25vh;
+  height: 60%;
   width: auto;
   margin-top: 1.5vh;
+  transition: all 0.4s ease 0s;
 }
 .title-text {
   width: 40%;
   margin: 0 auto;
-  margin-bottom: 3vh;
+  margin-bottom: 5vh;
   margin-top: 7vh;
 }
 .title-text h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 4rem;
-  color: #212a3e;
+  color: #152243;
 }
 .services-button {
   width: 14vw;
@@ -353,13 +449,8 @@ body.enabled {
   flex-direction: column;
   align-items: center;
 }
-.gabe {
-  height: 100%;
-  width: auto;
-  border-radius: 10px;
-}
 .team-title-text {
-  margin-bottom: 4vh;
+  margin-bottom: 0vh;
   margin-top: 8vh;
 }
 .team-title-text h1 {
@@ -389,6 +480,11 @@ body.enabled {
   border-radius: 10px;
   z-index: 1 !important;
 }
+.team-img2 img {
+  height: 100%;
+  width: auto;
+  border-radius: 10px;
+}
 .team-img1 {
   position: absolute;
   top: 4vh;
@@ -399,15 +495,21 @@ body.enabled {
   border-radius: 10px;
   z-index: 1 !important;
 }
+.team-img1 img {
+  height: 100%;
+  width: auto;
+  border-radius: 10px;
+}
 .team-col {
   width: 300px;
   height: 300px;
-  background-color: #485b7f;
+  background-color: #6581ae;
   border-radius: 10px;
   position: relative;
   z-index: 2 !important;
   margin: 0 100px;
   margin-bottom: 15vh;
+  transition: all 0.4s ease 0s;
 }
 #team-col1 {
   margin-bottom: 30vh;
@@ -446,7 +548,7 @@ body.enabled {
   font-size: 2rem;
 }
 .primary2 h1 {
-  color: #212a3e;
+  color: #152243;
   font-size: 1.75rem;
   display: block;
 }
@@ -523,7 +625,7 @@ body.enabled {
   align-items: center;
 }
 .dark-mode {
-  background-color: #212a3e;
+  background-color: #152243;
 }
 .black-mode {
   background-color: rgb(3, 2, 8);
@@ -536,6 +638,7 @@ body.enabled {
 }
 .pink-gradiant {
   background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  background: linear-gradient(to right, #12c2e9, #c471ed, #cb1c8d);
   -webkit-background-clip: text; /* Apply gradient as text fill */
   -webkit-text-fill-color: transparent; /* Make text transparent */
 }

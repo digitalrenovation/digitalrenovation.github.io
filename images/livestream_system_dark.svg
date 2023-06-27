@@ -10,7 +10,7 @@
    data-name="Line Color"
    class="icon line-color"
    version="1.1"
-   sodipodi:docname="livestream_system.svg"
+   sodipodi:docname="livestream_system_dark.svg"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -29,7 +29,7 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="0.539375"
-     inkscape:cx="368.94554"
+     inkscape:cx="370.79954"
      inkscape:cy="296.63963"
      inkscape:window-width="1920"
      inkscape:window-height="974"
@@ -40,7 +40,7 @@
   <path
      id="secondary"
      d="M7,10H9m6,5,4.62,1.92A1,1,0,0,0,21,16V8a1,1,0,0,0-1.38-.92L15,9Z"
-     style="fill:none;stroke:#6581a8;stroke-linecap:round;stroke-linejoin:round;stroke-width:2;stroke-opacity:1" />
+     style="fill:none;stroke:#cb1c8d;stroke-linecap:round;stroke-linejoin:round;stroke-width:2;stroke-opacity:1" />
   <rect
      id="primary"
      x="3"

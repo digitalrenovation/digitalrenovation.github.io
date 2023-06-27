@@ -87,7 +87,7 @@
           ><i class="bx bx-expand-vertical" style="color: #152243"></i
         ></a>
       </div>
-    </div>
+    </div>   
     <div class="heading-block centered">
       <div class="gradiant-header centered">
         <h1>
@@ -109,9 +109,10 @@
     <div class="location-block">
       <div class="location-container">
           <div class="heading"><h1>Where We're Located</h1></div>
+          <hr class="heading-underscore">
           <div class="map-container">
-              <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d381290.7652533418!2d-71.5648883!3d41.7025169!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e43514620ed70f%3A0x1e4e18bce7c106e7!2sRhode%20Island!5e0!3m2!1sen!2sus!4v1686616139620!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
+              <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1HuB--3JibqfgwUv61azrVLvw8HpPgEA&hl=en&ehbc=2E312F" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
       </div>
     </div>
     <div class="service-block">
@@ -120,15 +121,18 @@
       </div>
       <div class="row centered">
           <div class="col">
-              <img class="img" src="./images/logo_design.svg">
+              <img class="img light" src="./images/logo_design.svg">
+              <img class="img dark" src="./images/logo_design_dark.svg">
               <div class="primary"><h1>Logos & Branding</h1></div>
           </div>
           <div class="col">
-              <img class="img" src="./images/web_design.svg">
+              <img class="img light" src="./images/web_design.svg">
+              <img class="img dark" src="./images/web_design_dark.svg">
               <div class="primary"><h1 class="primary">Website Development</h1></div>
           </div>
           <div class="col">
-              <img class="img" src="./images/livestream_system.svg">
+              <img class="img light" src="./images/livestream_system.svg">
+              <img class="img dark" src="./images/livestream_system_dark.svg">
               <div class="primary"><h1 class="primary">Livestream Setups</h1></div>
           </div>
       </div>
@@ -137,10 +141,11 @@
     <div class="team-block">
       <div class="team-container">
         <div class="team-title-text"><h1>Our Team</h1></div>
+        <hr class="heading-underscore">
         <div class="team-row">
           <div class="team-col" id="team-col1">
             <div class="team-img1">
-              <img src="./images/gabe.png" alt="Gabriel Ives" class="gabe">
+              <img src="./images/gabe.png" alt="Gabriel Ives">
               <div class="image-div centered">
                 <h1>Gabriel Ives</h1>
                 <h3>A/V Technician & Branding Specialist</h3>
@@ -148,7 +153,13 @@
             </div>
           </div>
           <div class="team-col">
-            <div class="team-img2"></div>
+            <div class="team-img2">
+              <img src="./images/ethan.jpg" alt="Ethan Snyder">
+              <div class="image-div centered">
+                <h1>Ethan Snyder</h1>
+                <h3>Web Developer</h3>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -157,21 +168,25 @@
       <div class="title-text centered">
         <h1>Pricing Plans</h1>
       </div>
+      <hr class="heading-underscore">
       <div class="row centered">
           <div class="pricing-col">
-            <div class="rounded-top"></div>
+            <div class="rounded-top uno"></div>
             <div class="primary2"><h1>Facelift Packages</h1></div>
-            <img class="pricing-img" src="./images/facelift_plans.svg">
+            <img class="pricing-img light" src="./images/facelift_plans.svg">
+            <img class="pricing-img dark" src="./images/facelift_plans_dark.svg">
           </div>
           <div class="pricing-col">
-            <div class="rounded-top"></div>
+            <div class="rounded-top dos"></div>
             <div class="primary2"><h1>Livestreaming Packages</h1></div>
-            <img class="pricing-img" src="./images/livestream_plans.svg">
+            <img class="pricing-img light" src="./images/livestream_plans.svg">
+            <img class="pricing-img dark" src="./images/livestream_plans_dark.svg">
           </div>
           <div class="pricing-col">
-            <div class="rounded-top"></div>
+            <div class="rounded-top tres"></div>
             <div class="primary2"><h1>Overhaul Packages</h1></div>
-            <img class="pricing-img" src="./images/overhaul_plans.svg">
+            <img class="pricing-img light" src="./images/overhaul_plans.svg">
+            <img class="pricing-img dark" src="./images/overhaul_plans_dark.svg">
           </div>
       </div>
       <div class="button-centerer"><div class="services-button"><a href="#"><h1>Learn More</h1></a></div></div>
@@ -180,7 +195,7 @@
       <footer class="footer">
         <div class="mail-box">
           <div><h1 class="mail-box-header">Subscriber Newsletter</h1></div>
-          <div><h2 class="mail-box-text"><center>Enter your email to receive valuable information and deals</center></h2></div>
+          <div><h2 class="mail-box-text"><center>Enter your email to receive valuable information and deals</h2></div>
           <div class="email-form-parent">
             <div class="email-box"><input class="input" type="email" name="email" placeholder="Enter your email" style="padding-left: 1vw;"></div>
             <div class="email-button"><h1>Get Started</h1></div>
@@ -216,8 +231,7 @@
               </div>
             </div>
         </div>
-        </div>
-      </footer>
+      </footer></div>
     </section>
     <script>
       window.addEventListener("DOMContentLoaded", function () {
@@ -247,7 +261,6 @@
       const slider2 = document.getElementById("slider2");
       //items that are getting their colors changed
       const header = document.getElementById('header');
-      const contentArea = document.querySelector(".service-block");
       const headingblock = document.querySelector(".heading-block");
       const rqbutton = document.querySelector(".pink-button");
       const gradiantwords = document.querySelector(".gradiant-header");
@@ -262,7 +275,7 @@
 
       //desktop view slider
       slider.addEventListener('click', function() {
-        headingblock.classList.toggle('dark-grey-mode');
+        headingblock.classList.toggle('enabled');
         header.classList.toggle('black-mode');
         rqbutton.classList.toggle('pink-mode');
         gradianth1.classList.toggle('pink-gradiant');
@@ -271,13 +284,12 @@
         footer.classList.toggle('enabled');
         locationblock.classList.toggle('enabled');
         logotext.classList.toggle('enabled');
-        serviceblock.classList.toggle('enabled');
         body.classList.toggle('enabled');
       })
 
       //mobile view slider
       slider2.addEventListener('click', function() {
-        headingblock.classList.toggle('dark-grey-mode');
+        headingblock.classList.toggle('enabled');
         header.classList.toggle('black-mode');
         rqbutton.classList.toggle('pink-mode');
         gradianth1.classList.toggle('pink-gradiant');
@@ -287,7 +299,6 @@
         footer.classList.toggle('enabled');
         locationblock.classList.toggle('enabled');
         logotext.classList.toggle('enabled');
-        serviceblock.classList.toggle('enabled');
         body.classList.toggle('enabled');
       })
     </script>

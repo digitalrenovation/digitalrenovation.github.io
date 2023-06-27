@@ -18,9 +18,6 @@
   height: auto;
   background-color: #152243;
 }
-.footer.enabled .height-fixer {
-  background-color: black;
-}
 .fcontainer {
   width: 100%;
   height: 40vh;
@@ -91,9 +88,6 @@
   z-index: 10000;
   border-radius: 6px;
 }
-.footer.enabled .mail-box {
-  background-color: rgb(13, 12, 13);
-}
 .mail-box-header {
   margin-top: 8vh;
   font-size: 3.5rem;
@@ -116,9 +110,6 @@
   font-weight: 400;
   color: #22345e;
 }
-.footer.enabled .mail-box-text {
-  color: white;
-}
 .email-form-parent {
   width: 50%;
   height: 8vh;
@@ -134,10 +125,6 @@
   background-color: #c6ccd8;
   opacity: 0.3;
 }
-.footer.enabled .email-box {
-  background-color: #cb1c8d;
-  color: white;
-}
 .email-button {
   width: 27.5%;
   height: 100%;
@@ -148,17 +135,11 @@
   align-items: center;
   cursor: pointer;
 }
-.footer.enabled .email-button {
-  background-color: #cb1c8d;
-}
 .email-button h1 {
   color: #f7bd5e;
   font-size: 1.3rem;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-}
-.footer.enabled .email-button h1 {
-  color: white;
 }
 .input {
   border: none;
