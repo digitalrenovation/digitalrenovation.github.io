@@ -50,10 +50,12 @@
             <div class="item"><a href="pricing.html">Pricing</a></div>
             <div class="item"><a href="team.html">Our Team</a></div>
             <div class="cta-background">
-              <a class="cta" href="contact.html"><button class="pink-button">Request Quote</button></a>
+              <a class="cta" href="contact.html"
+                ><button class="pink-button">Request Quote</button></a
+              >
             </div>
             <div class="ditem">
-              <input type="checkbox" id="slider" class="slider-checkbox">
+              <input type="checkbox" id="slider" class="slider-checkbox" />
               <label for="slider" class="slider">
                 <span class="slider-handle"></span>
               </label>
@@ -78,7 +80,7 @@
       <div class="ditem"><a href="team.html">Our Team</a></div>
       <div class="ditem"><a href="contact.html">Request Quote</a></div>
       <div class="ditems">
-        <input type="checkbox" id="slider2" class="slider-checkbox">
+        <input type="checkbox" id="slider2" class="slider-checkbox" />
         <label for="slider2" class="slider">
           <span class="slider-handle"></span>
         </label>
@@ -90,44 +92,52 @@
       </div>
     </div>
     <section class="main-body-section">
-        <div class="contact-container centered">
-            <div class="form">
-                <div class="contact-info">
-                  <h3 class="title blue">Let's Get in Touch</h3>
-                  <h6 class="contact-paragraph">We'd love to hear from you! 
-                  Feel free to reach out to us using the contact form or the provided contact details below.</h6>
-                  <div class="email">
-                    digitalrenovation@gmail.com
-                  </div>
-                </div>
-                <div class="contact-form">
-                    <form action="">
-                        <div class="centered">  
-                          <h3 class="title">Contact Us</h3>
-                        </div>
-                        <div class="input-container name">
-                          <input type="text" name="name" class="input">
-                          <label for="First Name"></label>
-                        </div>
-                        <div class="input-container name">
-                          <input type="text" name="name" class="input">
-                          <label for="Last Name"></label>
-                        </div>
-                        <div class="input-container email">
-                          <input type="text" name="email" class="input">
-                          <label for="Email"></label>
-                        </div>
-                        <div class="input-container message">
-                          <input type="text" name="message" class="input">
-                          <label for="Message"></label>
-                        </div>
-                        <div class="centered">
-                          <input class="submit-button" type="submit" value="Send">
-                        </div>
-                    </form>
-                </div>
+      <div class="contact-container centered">
+        <div class="form">
+          <div class="contact-info">
+            <h3 class="title blue">Let's Get in Touch</h3>
+            <h6 class="contact-paragraph">
+              We'd love to hear from you! Feel free to reach out to us using the
+              contact form or the provided contact details below.
+            </h6>
+            <div class="info-box">
+              <div class="email">
+                <h6>Email: digitalrenovation@gmail.com</h6>
+              </div>
+              <div class="phone">Phone: 401-444-4444</div>
+              <div class="social-media-icons">
+                <h6>Connect with us:</h6>
+              </div>
             </div>
+          </div>
+          <div class="contact-form">
+            <form action="">
+              <div class="centered">
+                <h3 class="title">Contact Us</h3>
+              </div>
+              <div class="input-container name">
+                <input type="text" name="name" class="input" />
+                <label for="First Name"></label>
+              </div>
+              <div class="input-container name">
+                <input type="text" name="name" class="input" />
+                <label for="Last Name"></label>
+              </div>
+              <div class="input-container email">
+                <input type="text" name="email" class="input" />
+                <label for="Email"></label>
+              </div>
+              <div class="input-container message">
+                <input type="text" name="message" class="input" />
+                <label for="Message"></label>
+              </div>
+              <div class="centered">
+                <input class="submit-button" type="submit" value="Send" />
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
     <script>
       window.addEventListener("DOMContentLoaded", function () {
@@ -148,31 +158,31 @@
       });
 
       //buttons
-      const toggleButton = document.getElementById('change-color');
+      const toggleButton = document.getElementById("change-color");
       const slider = document.getElementById("slider");
       const slider2 = document.getElementById("slider2");
       //items that are getting their colors changed
-      const header = document.getElementById('header');
+      const header = document.getElementById("header");
       const footer = document.querySelector(".footer");
       const dropdown = document.querySelector(".dropdown");
       const rqbutton = document.querySelector(".pink-button");
-      const logotext = document.querySelector('.D');
+      const logotext = document.querySelector(".D");
 
       //desktop view slider
-      slider.addEventListener('click', function() {
-        header.classList.toggle('black-mode');
+      slider.addEventListener("click", function () {
+        header.classList.toggle("black-mode");
         dropdown.classList.toggle("enabled");
-        rqbutton.classList.toggle('pink-mode');
-        logotext.classList.toggle('enabled');
-      })
+        rqbutton.classList.toggle("pink-mode");
+        logotext.classList.toggle("enabled");
+      });
 
       //mobile view slider
-      slider2.addEventListener('click', function() {
-        header.classList.toggle('black-mode');
+      slider2.addEventListener("click", function () {
+        header.classList.toggle("black-mode");
         dropdown.classList.toggle("enabled");
-        rqbutton.classList.toggle('pink-mode');
-        logotext.classList.toggle('enabled');
-      })
+        rqbutton.classList.toggle("pink-mode");
+        logotext.classList.toggle("enabled");
+      });
     </script>
   </body>
 </html>
