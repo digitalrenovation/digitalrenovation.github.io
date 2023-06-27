@@ -1,79 +1,92 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
+/*ALL DARK MODE CSS*/
+body.enabled {
+  /* Shared properties for all elements */
+  background-color: #0c0c0d;
+}
 
-/*ALL DARKMODE CSS*/
+body.enabled .ditem2 {
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  border: none;
+  box-shadow: 0 4px 6px rgba(219, 55, 162, 0.5);
+}
+
+body.enabled .DD,
+body.enabled .D {
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  -webkit-background-clip: text; /* Apply gradient as text fill */
+  -webkit-text-fill-color: transparent; /* Make text transparent */
+}
+
+body.enabled .ditem a:hover,
+body.enabled .ditem1 a:hover {
+  color: #cb1c8d;
+}
+
+body.enabled .ditem1 a,
+body.enabled .ditem a,
+body.enabled .ditem2 a {
+  color: white;
+}
+
+body.enabled .mail-box-header {
+  color: #cb1c8d;
+}
+
+body.enabled .footer-row,
+body.enabled .fcontainer,
+body.enabled .dropdown,
+body.enabled .location-block {
+  background-color: black;
+}
+
 .dark {
   display: none;
 }
+
+body.enabled .light {
+  display: none;
+}
+
 body.enabled .pink-button {
   color: white;
+  background-color: #cb1c8d;
 }
+
 body.enabled .dark {
   display: block;
 }
-body.enabled {
-  background-color: #0c0c0d;
-}
-body.enabled .title-text h1 {
+
+body.enabled .title-text h1,
+body.enabled .mail-box-text {
   color: white;
 }
+
 body.enabled .col {
   background-color: white;
   border: none;
 }
-body.enabled .light {
-  display: none;
-}
+
 body.enabled .gradiant-header h1 {
   /*this applies when the color gets changed*/
   background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.location-block.enabled {
-  background-color: black;
-}
-body.enabled .services-button {
+
+body.enabled .services-button,
+body.enabled .email-button,
+body.enabled .explore-button {
   background-color: #cb1c8d;
-}
-body.enabled .service-block {
-  background-color: #0c0c0d;
-}
-body.enabled .team-block {
-  background-color: black;
-}
-.heading-block.enabled {
-  background-color: #0c0c0d;
-}
-body.enabled .mail-box {
-  border: black 4px solid;
-  background-color: #171719;
-}
-body.enabled .team-col {
-  background-color: #c6ccd8;
-}
-body.enabled .team-col:hover {
-  background: linear-gradient(to left, #12c2e9, #c471ed, #f64f59);
-}
-body.enabled .map-container {
-  background-color: #c6ccd8;
-  background-color: #152243;
-}
-.footer.enabled .mail-box-text {
-  color: white;
-}
-.map {
-  box-shadow: 0 5px 10px rgba(0 0 0 / 0.5);
-}
-body.enabled .map {
-  box-shadow: 2px 5px 10px rgba(0 0 0 / 0.8);
 }
 body.enabled .uno {
   background-color: #12c2e9;
@@ -84,18 +97,47 @@ body.enabled .dos {
 body.enabled .tres {
   background-color: #f64f59;
 }
-.footer.enabled {
+body.enabled .service-block,
+body.enabled .heading-block,
+body.enabled .map-container {
   background-color: #0c0c0d;
 }
-.footer.enabled .height-fixer {
+
+body.enabled .team-block,
+body.enabled .team-col,
+body.enabled .height-fixer,
+body.enabled .map {
   background-color: black;
 }
-.footer.enabled .email-button h1 {
+
+body.enabled .team-col:hover {
+  background: linear-gradient(to left, #12c2e9, #c471ed, #f64f59);
+}
+
+body.enabled .mail-box {
+  border: black 4px solid;
+  background-color: #171719;
+}
+
+body.enabled header,
+body.enabled .footer,
+body.enabled .email-box {
+  background-color: #0c0c0d;
+}
+body.enabled .email-button h1 {
   color: white;
 }
-.footer.enabled .email-box {
-  background-color: #cb1c8d;
+
+body.enabled .email-box {
   color: white;
+}
+
+.map {
+  box-shadow: 0 5px 10px rgba(0 0 0 / 0.5);
+}
+
+body.enabled .map {
+  box-shadow: 2px 5px 10px rgba(0 0 0 / 0.8);
 }
 /* HEADING CSS*/
 .heading-block {

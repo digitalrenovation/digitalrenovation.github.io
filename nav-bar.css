@@ -51,12 +51,6 @@ header {
   align-items: center;
   background-color: #152243;
 }
-.header-reg {
-  color: #344263;
-}
-.header-custom {
-  color: #22345e;
-}
 .logo,
 .dlogo {
   cursor: pointer;
@@ -80,11 +74,6 @@ button:hover {
   color: #f1f6f9;
   font-size: 2rem;
   margin-right: 20vw;
-}
-.D.enabled {
-  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
-  -webkit-background-clip: text; /* Apply gradient as text fill */
-  -webkit-text-fill-color: transparent; /* Make text transparent */
 }
 .nav {
   display: flex;
@@ -115,9 +104,6 @@ button:hover {
   background-color: #f1f6f9;
   display: none;
 }
-.dropdown.enabled {
-  background-color: black;
-}
 .ditem1 {
   margin-top: 8vh;
 }
@@ -133,11 +119,6 @@ button:hover {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
   transition: 0.3s ease-in-out;
 }
-.dropdown.enabled .ditem2 {
-  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
-  border: none;
-  box-shadow: 0 4px 6px rgba(219, 55, 162, 0.5);
-}
 .ditem2:hover {
   transition: 0.3s ease-in-out;
   scale: 1.1;
@@ -145,11 +126,6 @@ button:hover {
 .DD {
   color: #152243;
   font-size: 3rem !important;
-}
-.dropdown.enabled .DD {
-  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
-  -webkit-background-clip: text; /* Apply gradient as text fill */
-  -webkit-text-fill-color: transparent; /* Make text transparent */
 }
 .ditem1 a,
 .ditem a,
@@ -161,21 +137,12 @@ button:hover {
   color: #152243;
   padding: 10px 25px;
 }
-.dropdown.enabled .ditem1 a,
-.dropdown.enabled .ditem a,
-.dropdown.enabled .ditem2 a {
-  color: white;
-}
 .ditem2 a {
   font-size: 2.5rem !important;
 }
 .ditem a:hover,
 .ditem1 a:hover {
   color: #f7bd5e;
-}
-.dropdown.enabled .ditem a:hover,
-.dropdown.enabled .ditem1 a:hover {
-  color: #cb1c8d;
 }
 @keyframes SlideDownDropdown {
   0% {
@@ -206,6 +173,9 @@ button:hover {
 }
 .dropdown.active {
   display: block;
+}
+.dropdown.active header {
+  display: none;
 }
 
 /* THIS IS CSS FOR CUSTOM HAMBURGER */
