@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -38,16 +41,22 @@
     />
   </head>
   <body>
+
+    <button onclick="topFunction()" id="up-btn" title="Go to top">
+      <img>
+    </button>
+
     <section>
       <header id="header">
         <div class="container">
           <div class="logo">
+            <img>
             <h2><a href="index.html" class="D">Digital Renovation</a></h2>
           </div>
           <div class="nav">
-            <div class="item"><a href="services.html">Services</a></div>
-            <div class="item"><a href="pricing.html">Pricing</a></div>
-            <div class="item"><a href="team.html">Our Team</a></div>
+            <div class="item"><a href="#anchor-services">Services</a></div>
+            <div class="item"><a href="#anchor-pricing">Pricing</a></div>
+            <div class="item"><a href="#anchor-team">Our Team</a></div>
             <div class="cta-background">
               <a class="cta" href="contact.html"><button class="pink-button">Request Quote</button></a>
             </div>
@@ -73,9 +82,9 @@
           <h2><a href="index.html" class="DD">Digital Renovation</a></h2>
         </div>
       </div>-->
-      <div class="ditem1"><a href="services.html">Services</a></div>
-      <div class="ditem"><a href="pricing.html">Pricing</a></div>
-      <div class="ditem"><a href="team.html">Our Team</a></div>
+      <div class="ditem1"><a href="#anchor-services">Services</a></div>
+      <div class="ditem"><a href="#anchor-pricing">Pricing</a></div>
+      <div class="ditem"><a href="#anchor-team">Our Team</a></div>
       <div class="ditem"><a href="contact.html">Request Quote</a></div>
       <div class="ditems">
         <input type="checkbox" id="slider2" class="slider-checkbox">
@@ -104,22 +113,36 @@
           <span class="bottom-line"><h1>Digital Solutions</h1></span>
         </h1>
       </div>
-      <div class="explore-button centered"><a href="#">Explore More</a></div>
+      <div class="explore-button centered"><a href="contact.html">Explore More</a></div>
     </div>
     </section>
+
     <div class="location-block">
       <div class="location-container">
-          <div class="heading"><h1>Where We're Located</h1></div>
-          <hr class="heading-underscore">
-          <div class="map-container">
-              <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1HuB--3JibqfgwUv61azrVLvw8HpPgEA&hl=en&ehbc=2E312F" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+        <div class="title-text title-light"><h1>Where We're Located</h1></div>
+        <hr class="heading-underscore-light">
+        <div class="map-container">
+          <!--
+            <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1HuB--3JibqfgwUv61azrVLvw8HpPgEA&hl=en&ehbc=2E312F" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          -->
+          <a href="https://www.google.com/maps/d/embed?mid=1HuB--3JibqfgwUv61azrVLvw8HpPgEA&hl=en&ehbc=2E312F">
+            <img class="map" src="./images/territory.png">
+          </a>
+
+          <h1 class="map-link-text">See More</h1>
+        </div>
+        <div class="map-description">
+          <h1>We Go The Distance!</h1>
+          <br><br>
+          <p>Our team will travel up to 100 miles from the business headquarters in Warwick, RI.</p>
+        </div>
       </div>
     </div>
-    <div class="service-block">
-      <div class="title-text centered">
+    <div class="service-block" id="anchor-services">
+      <div class="title-text title-dark">
           <h1>Services</h1>
       </div>
+      <hr class="heading-underscore-dark">
       <div class="row centered">
           <div class="col">
               <img class="img light" src="./images/logo_design.svg">
@@ -137,19 +160,19 @@
               <div class="primary"><h1 class="primary">Livestream Setups</h1></div>
           </div>
       </div>
-      <div class="button-centerer"><div class="services-button"><a href="#"><h1>Learn More</h1></a></div></div>
+      <div class="button-centerer"><div class="services-button"><a href="contact.html"><h1>Learn More</h1></a></div></div>
     </div>
-    <div class="team-block">
+    <div class="team-block" id="anchor-team">
       <div class="team-container">
-        <div class="team-title-text"><h1>Our Team</h1></div>
-        <hr class="heading-underscore">
+        <div class="title-text title-light"><h1>Our Team</h1></div>
+        <hr class="heading-underscore-light">
         <div class="team-row">
           <div class="team-col" id="team-col1">
             <div class="team-img1">
               <img src="./images/gabe.png" alt="Gabriel Ives">
               <div class="image-div centered">
                 <h1>Gabriel Ives</h1>
-                <h3>A/V Technician & Branding Specialist</h3>
+                <h3>A/V Technician<br>& Branding Specialist</h3>
               </div>
             </div>
           </div>
@@ -165,11 +188,11 @@
         </div>
       </div>
     </div>
-    <div class="pricing-block">
-      <div class="title-text centered">
+    <div class="pricing-block" id="anchor-pricing">
+      <div class="title-text title-dark">
         <h1>Pricing Plans</h1>
       </div>
-      <hr class="heading-underscore">
+      <hr class="heading-underscore-dark">
       <div class="row centered">
           <div class="pricing-col">
             <div class="rounded-top uno"></div>
@@ -190,7 +213,7 @@
             <img class="pricing-img dark" src="./images/overhaul_plans_dark.svg">
           </div>
       </div>
-      <div class="button-centerer"><div class="services-button"><a href="#"><h1>Learn More</h1></a></div></div>
+      <div class="button-centerer"><div class="services-button"><a href="contact.html"><h1>Learn More</h1></a></div></div>
     </div>
     <section>
       <footer class="footer">
@@ -281,6 +304,25 @@
         logotext.classList.toggle('enabled');
         body.classList.toggle('enabled');
       })
+
+      let mybutton = document.getElementById("up-btn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
     </script>
   </body>
 </html>

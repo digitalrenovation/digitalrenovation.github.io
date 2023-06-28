@@ -55,6 +55,22 @@ header {
 .dlogo {
   cursor: pointer;
 }
+
+.logo {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  content: url("./images/DR_Logo_Light.svg");
+  height: 60px;
+  width: auto;
+  margin-right: 20px;
+}
+
 button {
   border: none;
   color: #152243;
