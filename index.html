@@ -333,11 +333,13 @@
   
       if (savedClass) {
         document.body.classList.add(savedClass);
+        if (document.body.classList.contains('enabled')) {
+          slider.checked = true;
+          slider2.checked = true;
+        } else {
+          
         }
-        if (savedPosition) {
-          var sliderCheckbox = document.getElementById('your-slider-checkbox');
-          sliderCheckbox.checked = (savedPosition === 'checked');
-      }
+        }
       })();
     </script>
   </body>
