@@ -219,7 +219,7 @@
       <footer class="footer">
         <div class="mail-box">
           <div><h1 class="mail-box-header">Subscriber Newsletter</h1></div>
-          <div><h2 class="mail-box-text"><center>Enter your email to receive valuable information and deals</h2></div>
+          <div><h2 class="mail-box-text"><center>Enter your email to receive valuable information and deals</center></h2></div>
           <div class="email-form-parent">
             <div class="email-box"><input class="input" type="email" name="email" placeholder="Enter your email" style="padding-left: 1vw;"></div>
             <div class="email-button"><h1>Get Started</h1></div>
@@ -264,18 +264,12 @@
         var button = document.querySelector(".explore-button");
         var exitbutton = document.querySelector(".ditem2");
 
-        button.addEventListener("click", function () {
-          window.scrollTo(1000);
-        });
-
         exitbutton.addEventListener("click", function () {
           dropdown_menu.classList.toggle("active");
-          document.body.style.overflow = "auto";
-        });
+      });
 
         hamburger.addEventListener("click", function () {
           dropdown_menu.classList.toggle("active");
-          document.body.style.overflow = "hidden";
         });
       });
 
@@ -295,6 +289,11 @@
         gradiantwords.classList.toggle("enabled");
         logotext.classList.toggle('enabled');
         body.classList.toggle('enabled');
+        if (document.body.classList.contains('enabled')) {
+          localStorage.setItem("savedClass", "enabled");
+        } else {
+          localStorage.setItem("savedClass", "disabled");
+        }
       })
 
       //mobile view slider
@@ -303,11 +302,15 @@
         gradiantwords.classList.toggle("enabled");
         logotext.classList.toggle('enabled');
         body.classList.toggle('enabled');
+        if (document.body.classList.contains('enabled')) {
+          localStorage.setItem("savedClass", "enabled");
+        } else {
+          localStorage.setItem("savedClass", "disabled");
+        }
       })
 
-      let mybutton = document.getElementById("up-btn");
 
-      // When the user scrolls down 20px from the top of the document, show the button
+      let mybutton = document.getElementById("up-btn");
       window.onscroll = function() {scrollFunction()};
 
       function scrollFunction() {
@@ -323,6 +326,19 @@
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
       }
+
+      (function() {
+      var savedClass = localStorage.getItem('savedClass');
+      var savedPosition = localStorage.getItem('sliderPosition');
+  
+      if (savedClass) {
+        document.body.classList.add(savedClass);
+        }
+        if (savedPosition) {
+          var sliderCheckbox = document.getElementById('your-slider-checkbox');
+          sliderCheckbox.checked = (savedPosition === 'checked');
+      }
+      })();
     </script>
   </body>
 </html>

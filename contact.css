@@ -4,6 +4,28 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* DARK MODE CSS */
+body.enabled .contact-info {
+  background-color: black;
+}
+body.enabled .blue {
+  color: white;
+}
+body.enabled .contact-paragraph {
+  color: #c6ccd8;
+}
+body.enabled .email h6 {
+  color: white;
+}
+body.enabled .submit-button {
+  background-color: #cb1c8d;
+  color: white;
+}
+body.enabled .contact-form,
+body.enabled .contact-info:before {
+  background-color: #0c0c0d;
+}
+/* EVERYTHING ELSE CSS */
 body,
 textarea,
 input {
@@ -67,8 +89,10 @@ form {
   border-radius: 15px;
   letter-spacing: 0.5px;
 }
+.email-contact,
 .name,
-.email {
+.email,
+.phone {
   height: 5vh;
   display: flex;
   align-items: center;
@@ -120,9 +144,8 @@ label {
   color: rgb(14, 14, 14);
   margin-bottom: 4vh;
 }
-.email {
-  display: flex;
-  justify-content: left;
+.email-contact {
+  /*content: url("./images/email.svg");*/
 }
 .envelope {
   margin-right: 2vw;

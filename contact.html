@@ -102,11 +102,15 @@
               contact form or the provided contact details below.
             </h6>
             <div class="info-box">
-              <div class="email">
+              <div class="email-contact">
+                <img>
                 <h6>Email: digitalrenovation@gmail.com</h6>
               </div>
-              <div class="phone">Phone: 401-444-4444</div>
-              <div class="social-media-icons">
+              <div class="phone">
+                <img>
+                <h6>Phone: 401-444-4444</h6>
+              </div>
+              <div class="phone">
                 <h6>Connect with us:</h6>
               </div>
             </div>
@@ -149,12 +153,10 @@
 
         exitbutton.addEventListener("click", function () {
           dropdown_menu.classList.toggle("active");
-          document.body.style.overflow = "auto";
         });
 
         hamburger.addEventListener("click", function () {
           dropdown_menu.classList.toggle("active");
-          document.body.style.overflow = "hidden";
         });
       });
 
@@ -168,21 +170,16 @@
       const dropdown = document.querySelector(".dropdown");
       const rqbutton = document.querySelector(".pink-button");
       const logotext = document.querySelector(".D");
+      const body = document.body;
 
       //desktop view slider
       slider.addEventListener("click", function () {
-        header.classList.toggle("black-mode");
-        dropdown.classList.toggle("enabled");
-        rqbutton.classList.toggle("pink-mode");
-        logotext.classList.toggle("enabled");
+        body.classList.toggle('enabled');
       });
 
       //mobile view slider
       slider2.addEventListener("click", function () {
-        header.classList.toggle("black-mode");
-        dropdown.classList.toggle("enabled");
-        rqbutton.classList.toggle("pink-mode");
-        logotext.classList.toggle("enabled");
+        body.classList.toggle('enabled');
       });
     </script>
   </body>
