@@ -25,6 +25,15 @@ body.enabled .contact-form,
 body.enabled .contact-info:before {
   background-color: #0c0c0d;
 }
+
+body.enabled .email-contact img {
+  content: url("./images/email_night.svg");
+}
+
+body.enabled .phone img {
+  content: url("./images/phone_night.svg");
+}
+
 /* EVERYTHING ELSE CSS */
 body,
 textarea,
@@ -79,7 +88,7 @@ form {
 }
 .title {
   color: white;
-  font-size: 1.5vw;
+  font-size: 2.75rem;
   margin-bottom: 2.5vh;
 }
 .input-container {
@@ -118,15 +127,23 @@ form {
 label {
   display: none;
 }
+
 .input {
+  color:  #c6ccd8;
   width: 100%;
   outline: none;
   background: none;
   padding: 0.5rem 1rem;
 }
+
+.input-description {
+  vertical-align: text-top;
+}
+
 .submit-button {
   background-color: #f7bd5e;
   border: none;
+  cursor: pointer;
   padding: 1.5rem 3.5rem 1.5rem 3.5rem;
   border-radius: 10px;
   font-size: 1.5rem;
@@ -135,6 +152,9 @@ label {
   justify-content: center;
   align-items: center;
   color: #22345e;
+}
+.submit-button:hover {
+  transform: scale(1.05);
 }
 .blue {
   color: #22345e;
@@ -145,8 +165,110 @@ label {
   margin-bottom: 4vh;
 }
 .email-contact {
-  /*content: url("./images/email.svg");*/
+  margin-bottom: 1.5vh;
 }
+
+.email-contact a {
+  color: #152243;
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+
+.email-contact img {
+  content: url("./images/email.svg");
+  height: 5vh;
+  width: auto;
+  margin-right: 20px;
+}
+
+.phone {
+  margin-bottom: 1.5vh;
+}
+
+.phone a {
+  color: #152243;
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+
+.phone img {
+  content: url("./images/phone.svg");
+  height: 5.5vh;
+  width: auto;
+  margin-right: 20px;
+}
+
+.meeting {
+  margin-bottom: 1.5vh;
+  display: flex;
+  align-items: center;
+}
+
+.meeting a {
+  color: #152243;
+  text-decoration: underline;
+  font-size: 1.7rem;
+}
+
+.meeting img {
+  content: url("./images/calendar.svg");
+  height: 5.5vh;
+  width: auto;
+  margin-right: 20px;
+}
+
+.socials {
+  margin-top: 4.5vh;
+  text-align: center;
+}
+
+.socials h6 {
+  color: #152243;
+  font-size: 1.7rem;
+  margin-bottom: 1.5vh;
+}
+
+.icon-container {
+  margin: auto;
+  height: 10vh;
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icon {
+  height: 9vh;
+  width: 9vh;
+  border-radius: 50%;
+  background-color: #22345e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.social-icon img {
+  height: 50%;
+  width: auto;
+}
+
+.instagram img {
+  content: url("./images/insta.svg");
+}
+
+.facebook img {
+  content: url("./images/fb.svg");
+}
+
+.linkedin img {
+  content: url("./images/linkedin.svg");
+}
+
+
 .envelope {
   margin-right: 2vw;
 }

@@ -190,10 +190,6 @@ button:hover {
 .dropdown.active {
   display: block;
 }
-.dropdown.active header {
-  display: none;
-}
-
 /* THIS IS CSS FOR CUSTOM HAMBURGER */
 .hamburger-box {
   width: 75px;

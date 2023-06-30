@@ -28,7 +28,7 @@ body.enabled .logo img {
 }
 
 body.enabled .ditem2 {
-  background-color:#cb1c8d;
+  background-color: #cb1c8d;
   border: none;
 }
 
@@ -325,8 +325,15 @@ body.enabled .heading-underscore-light {
     height: 10vh;
     margin-bottom: 30px;
   }
+  .heading-block {
+    height: 60vh !important;
+  }
   .services-button {
     height: 10vh;
+  }
+  #up-btn {
+    height: 75px !important;
+    width: 75px !important;
   }
 }
 @media screen and (max-width: 740px) {
@@ -397,7 +404,9 @@ body.enabled .heading-underscore-light {
   width: auto;
   content: url("./images/up.svg");
 }
-
+.ri-close-line {
+  font-size: 26px;
+}
 /* LOCATION BLOCK */
 .location-block {
   height: 110vh;
@@ -405,13 +414,18 @@ body.enabled .heading-underscore-light {
   border-radius: 10px;
   background-color: #22345e;
 }
+/*
 .location-container {
   display: flex;
   flex-wrap: wrap;
   height: auto;
   width: 100%;
 }
-
+.location-row {
+  width: 95%;
+  height: auto;
+  flex-wrap: wrap;
+}*/
 .map-container {
   height: 65%;
   width: 55%;
@@ -429,6 +443,17 @@ body.enabled .heading-underscore-light {
   object-fit: cover;
   box-shadow: 0 5px 10px rgba(0 0 0 / 0.5);
 }
+.map-description {
+  background-color: #12c2e9;
+  color: white;
+  width: 25vw;
+  height: 65%;
+  padding: 2%;
+}
+
+.map-description h1 {
+  text-align: center;
+}
 
 .map-container:hover .map {
   filter: brightness(0.7);
@@ -442,26 +467,13 @@ body.enabled .heading-underscore-light {
   visibility: hidden;
   opacity: 0;
   color: white;
-  
 }
 
 .map-container:hover .map-link-text {
   visibility: visible;
   opacity: 1;
+  cursor: pointer;
 }
-
-.map-description {
-  color: white;
-  width: 30%;
-  height: 65%;
-  padding: 2%;
-
-}
-
-.map-description h1 {
-  text-align: center;
-}
-
 /* SERVICES BLOCK */
 .service-block {
   width: 100%;
@@ -523,6 +535,7 @@ body.enabled .heading-underscore-light {
   margin-top: 7vh;
 }
 .title-text h1 {
+  margin-top: 4vh;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 4rem;
@@ -567,8 +580,11 @@ body.enabled .heading-underscore-light {
   .col {
     margin-left: 0;
     margin-right: 0;
-    width: 90vw;
-    height: 90vw;
+    width: 72vw;
+    height: 72vw;
+  }
+  .title-text h1 {
+    font-size: 3rem;
   }
   .col:hover {
     width: 100vw;
@@ -651,7 +667,6 @@ body.enabled .heading-underscore-light {
 
 .team-col:hover {
   background-color: white;
-
 }
 
 #team-col1 {
@@ -672,13 +687,18 @@ body.enabled .heading-underscore-light {
   text-align: center;
   font-size: 1.25rem;
   color: white;
+  margin-bottom: 2vh;
   font-family: "Poppins", sans-serif;
 }
 @media screen and (max-width: 576px) {
-  .team-img1, .team-img2 {
+  .team-img1,
+  .team-img2 {
     position: absolute;
     top: 1.5vh;
     left: 1.5vh;
+  }
+  #team-margin-top {
+    margin-top: 6vh;
   }
   .team-col {
     margin-left: 0;

@@ -76,12 +76,6 @@
       </header>
     </section>
     <div class="dropdown">
-      <!--
-      <div class="dropdown-container">
-        <div class="dropdown-logo">
-          <h2><a href="index.html" class="DD">Digital Renovation</a></h2>
-        </div>
-      </div>-->
       <div class="ditem1"><a href="#anchor-services">Services</a></div>
       <div class="ditem"><a href="#anchor-pricing">Pricing</a></div>
       <div class="ditem"><a href="#anchor-team">Our Team</a></div>
@@ -93,9 +87,9 @@
         </label>
       </div>
       <div class="ditem2">
-        <a href="#"
-          ><i class="bx bx-expand-vertical" style="color: #152243"></i
-        ></a>
+        <a href="#">
+          <i class="ri-close-line" color="#152243"></i>
+        </a>
       </div>
     </div>   
     <div class="heading-block centered">
@@ -121,20 +115,21 @@
       <div class="location-container">
         <div class="title-text title-light"><h1>Where We're Located</h1></div>
         <hr class="heading-underscore-light">
-        <div class="map-container">
-          <!--
-            <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1HuB--3JibqfgwUv61azrVLvw8HpPgEA&hl=en&ehbc=2E312F" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          -->
-          <a href="https://www.google.com/maps/d/embed?mid=1HuB--3JibqfgwUv61azrVLvw8HpPgEA&hl=en&ehbc=2E312F">
-            <img class="map" src="./images/territory.png">
-          </a>
-
-          <h1 class="map-link-text">See More</h1>
-        </div>
-        <div class="map-description">
-          <h1>We Go The Distance!</h1>
-          <br><br>
-          <p>Our team will travel up to 100 miles from the business headquarters in Warwick, RI.</p>
+        <div class="location-row">
+          <div class="map-container">
+            <!--
+              <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1HuB--3JibqfgwUv61azrVLvw8HpPgEA&hl=en&ehbc=2E312F" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            -->
+            <a href="https://www.google.com/maps/d/embed?mid=1HuB--3JibqfgwUv61azrVLvw8HpPgEA&hl=en&ehbc=2E312F">
+              <img class="map" src="./images/territory.png">
+            </a>
+            <h1 class="map-link-text">See More</h1>
+          </div>
+          <div class="map-description">
+            <h1>We Go The Distance!</h1>
+            <br><br>
+            <p>Our team will travel up to 100 miles from the business headquarters in Warwick, RI.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -176,7 +171,7 @@
               </div>
             </div>
           </div>
-          <div class="team-col">
+          <div class="team-col" id="team-margin-top">
             <div class="team-img2">
               <img src="./images/ethan.jpg" alt="Ethan Snyder">
               <div class="image-div centered">
@@ -239,10 +234,10 @@
               </div>
               <div class="footer-col">
                 <div>              
-                  <h2>Example</h2>
-                  <h3>Hi</h3>
-                  <h3>Hi</h3>
-                  <h3>Hi</h3>
+                  <h2>Forms</h2>
+                  <h3>Form1</h3>
+                  <h3>Form2</h3>
+                  <h3>Form3</h3>
                 </div>
               </div>
               <div class="footer-col">
@@ -250,7 +245,7 @@
                   <h2>Follow Us</h2>
                   <h3>Instagram</h3>
                   <h3>Facebook</h3>
-                  <h3>Youtube</h3>
+                  <h3>LinkedIn</h3>
                 </div>
               </div>
             </div>
@@ -264,12 +259,29 @@
         var button = document.querySelector(".explore-button");
         var exitbutton = document.querySelector(".ditem2");
 
+        //anchor tags
+        const navItems = document.querySelectorAll(".ditem");
+        const navitems1 = document.querySelector(".ditem1");
+
+        navItems.forEach(function (navItem) {
+          navItem.addEventListener("click", function () {
+            dropdown_menu.classList.toggle("active");
+            document.body.style.overflow = 'auto';
+          });
+        });
+        navitems1.addEventListener("click", function () {
+          dropdown_menu.classList.toggle("active");
+          document.body.style.overflow = 'auto';
+        })
+
         exitbutton.addEventListener("click", function () {
           dropdown_menu.classList.toggle("active");
+          document.body.style.overflow = 'auto';
       });
 
         hamburger.addEventListener("click", function () {
           dropdown_menu.classList.toggle("active");
+          document.body.style.overflow = 'hidden';
         });
       });
 

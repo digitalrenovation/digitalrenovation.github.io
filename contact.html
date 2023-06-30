@@ -43,7 +43,7 @@
       <header id="header">
         <div class="container">
           <div class="logo">
-            <img>
+            <img />
             <h2><a href="index.html" class="D">Digital Renovation</a></h2>
           </div>
           <div class="nav">
@@ -103,38 +103,47 @@
             </h6>
             <div class="info-box">
               <div class="email-contact">
-                <img>
-                <h6>Email: digitalrenovation@gmail.com</h6>
+                <img />
+                <a href="mailto:info@digitalrenovation.org"
+                  >info@digitalrenovation.org</a
+                >
               </div>
               <div class="phone">
-                <img>
-                <h6>Phone: 401-444-4444</h6>
+                <img />
+                <a href="tel:5153713650">(515)-371-3650</a>
               </div>
-              <div class="phone">
+              <div class="meeting">
+                <img />
+                <a href="https://calendly.com/gabriel-digren"
+                  >Schedule A Meeting</a
+                >
+              </div>
+              <div class="socials">
                 <h6>Connect with us:</h6>
+                <div class="icon-container">
+                  <a href="https://www.instagram.com/digitalrenovation/" target="_blank"><div class="social-icon instagram"><img></div></a>
+                  <a href="https://www.facebook.com/digren" target="_blank"><div class="social-icon facebook"><img></div></a>
+                  <a href="https://www.linkedin.com/company/digitalrenovation" target="_blank"><div class="social-icon linkedin"><img></div></a>
+                </div>
               </div>
             </div>
           </div>
           <div class="contact-form">
-            <form action="">
+            <form action="https://formsubmit.co/info@digitalrenovation.com" method="POST">
               <div class="centered">
                 <h3 class="title">Contact Us</h3>
               </div>
               <div class="input-container name">
-                <input type="text" name="name" class="input" />
-                <label for="First Name"></label>
+                <input type="text" name="name" class="input" placeholder="Full Name"/>
               </div>
               <div class="input-container name">
-                <input type="text" name="name" class="input" />
-                <label for="Last Name"></label>
+                <input type="text" name="email" class="input" placeholder="Email"/>
               </div>
-              <div class="input-container email">
-                <input type="text" name="email" class="input" />
-                <label for="Email"></label>
+              <div class="input-container name">
+                <input type="text" name="phone" class="input" placeholder="Phone"/>
               </div>
               <div class="input-container message">
-                <input type="text" name="message" class="input" />
-                <label for="Message"></label>
+                <input type="text" name="message" class="input input-description" placeholder="Description Of Service"/>
               </div>
               <div class="centered">
                 <input class="submit-button" type="submit" value="Send" />
@@ -143,6 +152,48 @@
           </div>
         </div>
       </div>
+    </section>
+    <section>
+      <footer class="footer">
+        <div class="mail-box">
+          <div><h1 class="mail-box-header">Subscriber Newsletter</h1></div>
+          <div><h2 class="mail-box-text"><center>Enter your email to receive valuable information and deals</center></h2></div>
+          <div class="email-form-parent">
+            <div class="email-box"><input class="input" type="email" name="email" placeholder="Enter your email" style="padding-left: 1vw;"></div>
+            <div class="email-button"><h1>Get Started</h1></div>
+          </div>
+        </div>
+        <div class="fcontainer">
+          <div class="height-fixer">
+            <div class="footer-row">
+              <div class="footer-col">
+                <div>              
+                  <h2>Menu Links</h2>
+                  <h3>Services</h3>
+                  <h3>Pricing</h3>
+                  <h3>Our Team</h3>
+                  <h3>Request Quote</h3>
+                </div>
+              </div>
+              <div class="footer-col">
+                <div>              
+                  <h2>Forms</h2>
+                  <h3>Form1</h3>
+                  <h3>Form2</h3>
+                  <h3>Form3</h3>
+                </div>
+              </div>
+              <div class="footer-col">
+                <div>              
+                  <h2>Follow Us</h2>
+                  <h3>Instagram</h3>
+                  <h3>Facebook</h3>
+                  <h3>LinkedIn</h3>
+                </div>
+              </div>
+            </div>
+        </div>
+      </footer></div>
     </section>
     <script>
       window.addEventListener("DOMContentLoaded", function () {
@@ -174,12 +225,12 @@
 
       //desktop view slider
       slider.addEventListener("click", function () {
-        body.classList.toggle('enabled');
+        body.classList.toggle("enabled");
       });
 
       //mobile view slider
       slider2.addEventListener("click", function () {
-        body.classList.toggle('enabled');
+        body.classList.toggle("enabled");
       });
     </script>
   </body>
