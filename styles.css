@@ -160,6 +160,17 @@ body.enabled .heading-underscore-light {
   background-color: #cb1c8d;
 }
 
+/*CONTAINER CSS*/
+
+.container {
+
+}
+
+.container a {
+  margin-bottom: 0;
+}
+
+
 /* HEADING CSS*/
 .heading-block {
   z-index: 1;

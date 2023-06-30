@@ -30,8 +30,21 @@ body.enabled .email-contact img {
   content: url("./images/email_night.svg");
 }
 
-body.enabled .phone img {
+body.enabled .phone-contact img {
   content: url("./images/phone_night.svg");
+}
+
+body.enabled .meeting img {
+  content: url("./images/calendar_night.svg");
+}
+
+body.enabled .contact-item a,
+body.enabled .socials h6 {
+  color: white;
+}
+
+body.enabled .social-icon {
+  background-color: #cb1c8d;
 }
 
 /* EVERYTHING ELSE CSS */
@@ -98,7 +111,6 @@ form {
   border-radius: 15px;
   letter-spacing: 0.5px;
 }
-.email-contact,
 .name,
 .email,
 .phone {
@@ -134,10 +146,7 @@ label {
   outline: none;
   background: none;
   padding: 0.5rem 1rem;
-}
-
-.input-description {
-  vertical-align: text-top;
+  vertical-align: top;
 }
 
 .submit-button {
@@ -164,57 +173,61 @@ label {
   color: rgb(14, 14, 14);
   margin-bottom: 4vh;
 }
-.email-contact {
-  margin-bottom: 1.5vh;
-}
 
-.email-contact a {
-  color: #152243;
-  text-decoration: none;
-  font-size: 1.7rem;
-}
-
-.email-contact img {
-  content: url("./images/email.svg");
-  height: 5vh;
-  width: auto;
-  margin-right: 20px;
-}
-
-.phone {
-  margin-bottom: 1.5vh;
-}
-
-.phone a {
-  color: #152243;
-  text-decoration: none;
-  font-size: 1.7rem;
-}
-
-.phone img {
-  content: url("./images/phone.svg");
-  height: 5.5vh;
-  width: auto;
-  margin-right: 20px;
-}
-
-.meeting {
+.contact-item {
   margin-bottom: 1.5vh;
   display: flex;
   align-items: center;
 }
 
-.meeting a {
+.contact-item a {
   color: #152243;
-  text-decoration: underline;
+  text-decoration: none;
   font-size: 1.7rem;
+}
+
+.contact-item img {
+  width: auto;
+  margin-right: 20px;
+}
+
+.email-contact {
+  
+}
+
+.email-contact a {
+
+}
+
+.email-contact img {
+  content: url("./images/email.svg");
+  height: 4.6vh;
+}
+
+.phone-contact {
+  
+}
+
+.phone-contact a {
+  
+}
+
+.phone-contact img {
+  content: url("./images/phone.svg");
+  height: 5.5vh;
+}
+
+.meeting {
+  
+}
+
+.meeting a {
+  text-decoration: underline;
 }
 
 .meeting img {
   content: url("./images/calendar.svg");
   height: 5.5vh;
-  width: auto;
-  margin-right: 20px;
 }
 
 .socials {

@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -42,10 +45,12 @@
     <section>
       <header id="header">
         <div class="container">
-          <div class="logo">
-            <img />
-            <h2><a href="index.html" class="D">Digital Renovation</a></h2>
-          </div>
+          <a href="index.html">
+            <div class="logo">
+              <img>
+              <h2><a href="index.html" class="D">Digital Renovation</a></h2>
+            </div>
+          </a>
           <div class="nav">
             <div class="item"><a href="services.html">Services</a></div>
             <div class="item"><a href="pricing.html">Pricing</a></div>
@@ -102,17 +107,17 @@
               contact form or the provided contact details below.
             </h6>
             <div class="info-box">
-              <div class="email-contact">
+              <div class="contact-item email-contact">
                 <img />
                 <a href="mailto:info@digitalrenovation.org"
                   >info@digitalrenovation.org</a
                 >
               </div>
-              <div class="phone">
+              <div class="contact-item phone-contact">
                 <img />
                 <a href="tel:5153713650">(515)-371-3650</a>
               </div>
-              <div class="meeting">
+              <div class="contact-item meeting">
                 <img />
                 <a href="https://calendly.com/gabriel-digren"
                   >Schedule A Meeting</a
@@ -136,14 +141,14 @@
               <div class="input-container name">
                 <input type="text" name="name" class="input" placeholder="Full Name"/>
               </div>
-              <div class="input-container name">
+              <div class="input-container email">
                 <input type="text" name="email" class="input" placeholder="Email"/>
               </div>
-              <div class="input-container name">
+              <div class="input-container phone">
                 <input type="text" name="phone" class="input" placeholder="Phone"/>
               </div>
               <div class="input-container message">
-                <input type="text" name="message" class="input input-description" placeholder="Description Of Service"/>
+                <input type="text" name="message" class="input" placeholder="Description Of Service"/>
               </div>
               <div class="centered">
                 <input class="submit-button" type="submit" value="Send" />
