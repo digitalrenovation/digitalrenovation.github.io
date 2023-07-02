@@ -207,12 +207,29 @@
         var button = document.querySelector(".explore-button");
         var exitbutton = document.querySelector(".ditem2");
 
+        //anchor tags
+        const navItems = document.querySelectorAll(".ditem");
+        const navitems1 = document.querySelector(".ditem1");
+
+        navItems.forEach(function (navItem) {
+          navItem.addEventListener("click", function () {
+            dropdown_menu.classList.toggle("active");
+            document.body.style.overflow = 'auto';
+          });
+        });
+        navitems1.addEventListener("click", function () {
+          dropdown_menu.classList.toggle("active");
+          document.body.style.overflow = 'auto';
+        })
+
         exitbutton.addEventListener("click", function () {
           dropdown_menu.classList.toggle("active");
-        });
+          document.body.style.overflow = 'auto';
+      });
 
         hamburger.addEventListener("click", function () {
           dropdown_menu.classList.toggle("active");
+          document.body.style.overflow = 'hidden';
         });
       });
 
@@ -231,12 +248,37 @@
       //desktop view slider
       slider.addEventListener("click", function () {
         body.classList.toggle("enabled");
+        if (document.body.classList.contains('enabled')) {
+          localStorage.setItem("savedClass", "enabled");
+        } else {
+          localStorage.setItem("savedClass", "disabled");
+        }
       });
 
       //mobile view slider
       slider2.addEventListener("click", function () {
         body.classList.toggle("enabled");
+        if (document.body.classList.contains('enabled')) {
+          localStorage.setItem("savedClass", "enabled");
+        } else {
+          localStorage.setItem("savedClass", "disabled");
+        }
       });
+      
+      (function() {
+      var savedClass = localStorage.getItem('savedClass');
+      var savedPosition = localStorage.getItem('sliderPosition');
+  
+      if (savedClass) {
+        document.body.classList.add(savedClass);
+        if (document.body.classList.contains('enabled')) {
+          slider.checked = true;
+          slider2.checked = true;
+        } else {
+          
+        }
+        }
+      })();
     </script>
   </body>
 </html>
