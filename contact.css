@@ -122,6 +122,7 @@ form {
   height: 15vh;
 }
 .info-box {
+  position: relative;
   width: 100%;
   height: auto;
   display: flex;
@@ -231,7 +232,9 @@ label {
 }
 
 .socials {
-  margin-top: 4.5vh;
+  position: absolute;
+  bottom: 4vh;
+  width: 80%;
   text-align: center;
 }
 
