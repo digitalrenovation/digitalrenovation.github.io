@@ -493,7 +493,7 @@ body.enabled .heading-underscore-light {
   opacity: 1;
   cursor: pointer;
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1024px) {
   .location-block {
     height: 150vh;
     height: auto;
@@ -814,7 +814,6 @@ body.enabled .heading-underscore-light {
 .tres {
   background-color: #f7bd5e;
 }
-
 /* SLIDER CSS */
 .slider {
   display: flex;
