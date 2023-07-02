@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!---Custom CSS Link-->
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="bottom.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="nav-bar.css" />
+
+    <!---Google Font Links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;1,400;1,500;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--boxicons link-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!--Remixicon link-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <header id="header">
+        <div class="container">
+          <a href="index.html">
+            <div class="logo">
+              <img>
+              <h2><a href="index.html" class="D">Digital Renovation</a></h2>
+            </div>
+          </a>
+          <div class="nav">
+            <div class="item"><a href="services.html">Services</a></div>
+            <div class="item"><a href="pricing.html">Pricing</a></div>
+            <div class="item"><a href="team.html">Our Team</a></div>
+            <div class="cta-background">
+              <a class="cta" href="contact.html"
+                ><button class="pink-button">Request Quote</button></a
+              >
+            </div>
+            <div class="ditem">
+              <input type="checkbox" id="slider" class="slider-checkbox" />
+              <label for="slider" class="slider">
+                <span class="slider-handle"></span>
+              </label>
+            </div>
+          </div>
+          <div class="hamburger-box">
+            <div class="top-bun"></div>
+            <div class="middle-bun"></div>
+            <div class="bottom-bun"></div>
+          </div>
+        </div>
+      </header>
+    </section>
+    <div class="dropdown">
+      <div class="dropdown-container">
+        <div class="dropdown-logo">
+          <h2><a href="index.html" class="DD">Digital Renovation</a></h2>
+        </div>
+      </div>
+      <div class="ditem1"><a href="services.html">Services</a></div>
+      <div class="ditem"><a href="pricing.html">Pricing</a></div>
+      <div class="ditem"><a href="team.html">Our Team</a></div>
+      <div class="ditem"><a href="contact.html">Request Quote</a></div>
+      <div class="ditems">
+        <input type="checkbox" id="slider2" class="slider-checkbox" />
+        <label for="slider2" class="slider">
+          <span class="slider-handle"></span>
+        </label>
+      </div>
+      <div class="ditem2">
+        <a href="#"
+          ><i class="bx bx-expand-vertical" style="color: #152243"></i
+        ></a>
+      </div>
+    </div>
+    <section class="main-body-section">
+      <h1>404 Error</h1>
+    </section>
+    <section>
+      <footer class="footer">
+        <div class="mail-box">
+          <div><h1 class="mail-box-header">Subscriber Newsletter</h1></div>
+          <div><h2 class="mail-box-text"><center>Enter your email to receive valuable information and deals</center></h2></div>
+          <div class="email-form-parent">
+            <div class="email-box"><input class="input" type="email" name="email" placeholder="Enter your email" style="padding-left: 1vw;"></div>
+            <div class="email-button"><h1>Get Started</h1></div>
+          </div>
+        </div>
+        <div class="fcontainer">
+          <div class="height-fixer">
+            <div class="footer-row">
+              <div class="footer-col">
+                <div>              
+                  <h2>Menu Links</h2>
+                  <h3>Services</h3>
+                  <h3>Pricing</h3>
+                  <h3>Our Team</h3>
+                  <h3>Request Quote</h3>
+                </div>
+              </div>
+              <div class="footer-col">
+                <div>              
+                  <h2>Forms</h2>
+                  <h3>Form1</h3>
+                  <h3>Form2</h3>
+                  <h3>Form3</h3>
+                </div>
+              </div>
+              <div class="footer-col">
+                <div>              
+                  <h2>Follow Us</h2>
+                  <h3>Instagram</h3>
+                  <h3>Facebook</h3>
+                  <h3>LinkedIn</h3>
+                </div>
+              </div>
+            </div>
+        </div>
+      </footer></div>
+    </section>
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        var hamburger = document.querySelector(".hamburger-box");
+        var dropdown_menu = document.querySelector(".dropdown");
+        var button = document.querySelector(".explore-button");
+        var exitbutton = document.querySelector(".ditem2");
+
+        //anchor tags
+        const navItems = document.querySelectorAll(".ditem");
+        const navitems1 = document.querySelector(".ditem1");
+
+        navItems.forEach(function (navItem) {
+          navItem.addEventListener("click", function () {
+            dropdown_menu.classList.toggle("active");
+            document.body.style.overflow = 'auto';
+          });
+        });
+        navitems1.addEventListener("click", function () {
+          dropdown_menu.classList.toggle("active");
+          document.body.style.overflow = 'auto';
+        })
+
+        exitbutton.addEventListener("click", function () {
+          dropdown_menu.classList.toggle("active");
+          document.body.style.overflow = 'auto';
+      });
+
+        hamburger.addEventListener("click", function () {
+          dropdown_menu.classList.toggle("active");
+          document.body.style.overflow = 'hidden';
+        });
+      });
+
+      //buttons
+      const toggleButton = document.getElementById("change-color");
+      const slider = document.getElementById("slider");
+      const slider2 = document.getElementById("slider2");
+      //items that are getting their colors changed
+      const header = document.getElementById("header");
+      const footer = document.querySelector(".footer");
+      const dropdown = document.querySelector(".dropdown");
+      const rqbutton = document.querySelector(".pink-button");
+      const logotext = document.querySelector(".D");
+      const body = document.body;
+
+      //desktop view slider
+      slider.addEventListener("click", function () {
+        body.classList.toggle("enabled");
+        if (document.body.classList.contains('enabled')) {
+          localStorage.setItem("savedClass", "enabled");
+        } else {
+          localStorage.setItem("savedClass", "disabled");
+        }
+      });
+
+      //mobile view slider
+      slider2.addEventListener("click", function () {
+        body.classList.toggle("enabled");
+        if (document.body.classList.contains('enabled')) {
+          localStorage.setItem("savedClass", "enabled");
+        } else {
+          localStorage.setItem("savedClass", "disabled");
+        }
+      });
+      
+      (function() {
+      var savedClass = localStorage.getItem('savedClass');
+      var savedPosition = localStorage.getItem('sliderPosition');
+  
+      if (savedClass) {
+        document.body.classList.add(savedClass);
+        if (document.body.classList.contains('enabled')) {
+          slider.checked = true;
+          slider2.checked = true;
+        } else {
+          
+        }
+        }
+      })();
+    </script>
+  </body>
+</html>
