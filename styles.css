@@ -160,6 +160,10 @@ body.enabled .heading-underscore-light {
   background-color: #cb1c8d;
 }
 
+body.enabled .slider-handle img {
+  content: url("./images/moon.svg");
+}
+
 /*CONTAINER CSS*/
 
 .container {
@@ -232,11 +236,20 @@ body.enabled .heading-underscore-light {
   top: 82vh;
   transition: all 0.4s ease 0s;
 }
+
+.explore-button:hover {
+  transform: scale(1.05);
+}
+
 .explore-button a {
   color: white;
   font-size: 1.25vw;
   font-size: 1.7rem;
   font-family: "Poppins", sans-serif;
+}
+
+.explore-button:hover a {
+  transform: scale(1.05);
 }
 
 .heading-underscore-light {
@@ -468,6 +481,7 @@ body.enabled .heading-underscore-light {
 .map-container {
   height: 95%;
   width: 96%;
+  border-radius: 20px;
 }
 .map {
   width: 100%;
@@ -539,6 +553,11 @@ body.enabled .heading-underscore-light {
   margin-top: 8vh;
   margin-bottom: 3vh;
 }
+
+.row a {
+  text-decoration: none;
+}
+
 .col {
   width: 40vh;
   height: 40vh;
@@ -611,6 +630,11 @@ body.enabled .heading-underscore-light {
   margin-bottom: 10vh;
   padding: 0 5px 0 5px;
 }
+.services-button:hover {
+  transform: scale(1.05);
+
+}
+
 .services-button a {
   display: flex;
   justify-content: center;
@@ -618,12 +642,22 @@ body.enabled .heading-underscore-light {
   height: 100%;
   width: 100%;
 }
+
+.services-button:hover a {
+  transform: scale(1.05);
+}
+
 .services-button h1 {
   color: white;
   font-size: 1.7rem;
   font-family: "Poppins", sans-serif;
   font-weight: 450;
 }
+
+.services-button:hover h1 {
+  transform: scale(1.05);
+}
+
 .button-centerer {
   display: flex;
   justify-content: center;
@@ -777,6 +811,7 @@ body.enabled .heading-underscore-light {
   box-shadow: 0 5px 10px rgba(52 66 99 / 0.3);
 }
 .pricing-col h1 {
+  color: #152243;
   margin-top: 5vh;
   font-size: 2rem;
 }
@@ -828,6 +863,9 @@ body.enabled .heading-underscore-light {
   margin-left: 3vw;
 }
 .slider-handle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   width: 24px;
   height: 24px;
@@ -835,6 +873,12 @@ body.enabled .heading-underscore-light {
   border-radius: 50%;
   transition: transform 0.3s ease;
   margin-left: 4px;
+}
+
+.slider-handle img {
+  content: url("./images/sun.svg");
+  height: 80%;
+  width: auto;
 }
 
 .slider-checkbox:checked + .slider .slider-handle {
@@ -854,6 +898,24 @@ body.enabled .heading-underscore-light {
 }
 .slider-checkbox {
   display: none;
+}
+
+/*404 Page*/
+
+.four0four {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: #152243;
+
+}
+
+.four0four h1 {
+  font-size: 5rem;
+}
+
+.four0four p {
+  font-size: 2rem;
 }
 
 /*HTML CLASS*/

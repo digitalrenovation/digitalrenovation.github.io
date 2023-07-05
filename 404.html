@@ -16,10 +16,9 @@
       referrerpolicy="no-referrer"
     />
     <!---Custom CSS Link-->
-    <link rel="stylesheet" href="contact.css" />
     <link rel="stylesheet" href="bottom.css" />
-    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="nav-bar.css" />
+    <link rel="stylesheet" href="styles.css" />
 
     <!---Google Font Links-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -42,28 +41,31 @@
     />
   </head>
   <body>
+
+    <button onclick="topFunction()" id="up-btn" title="Go to top">
+      <img>
+    </button>
+
     <section>
       <header id="header">
         <div class="container">
-          <a href="index.html">
             <div class="logo">
+              <a href="index.html">
               <img>
               <h2><a href="index.html" class="D">Digital Renovation</a></h2>
+              </a>
             </div>
-          </a>
           <div class="nav">
-            <div class="item"><a href="services.html">Services</a></div>
-            <div class="item"><a href="pricing.html">Pricing</a></div>
-            <div class="item"><a href="team.html">Our Team</a></div>
+            <div class="item"><a href="#anchor-services">Services</a></div>
+            <div class="item"><a href="#anchor-pricing">Pricing</a></div>
+            <div class="item"><a href="#anchor-team">Our Team</a></div>
             <div class="cta-background">
-              <a class="cta" href="contact.html"
-                ><button class="pink-button">Request Quote</button></a
-              >
+              <a class="cta" href="contact.html"><button class="pink-button">Request Quote</button></a>
             </div>
             <div class="ditem">
-              <input type="checkbox" id="slider" class="slider-checkbox" />
+              <input type="checkbox" id="slider" class="slider-checkbox">
               <label for="slider" class="slider">
-                <span class="slider-handle"></span>
+                <span class="slider-handle"><img></span>
               </label>
             </div>
           </div>
@@ -76,30 +78,31 @@
       </header>
     </section>
     <div class="dropdown">
-      <div class="dropdown-container">
-        <div class="dropdown-logo">
-          <h2><a href="index.html" class="DD">Digital Renovation</a></h2>
-        </div>
-      </div>
-      <div class="ditem1"><a href="services.html">Services</a></div>
-      <div class="ditem"><a href="pricing.html">Pricing</a></div>
-      <div class="ditem"><a href="team.html">Our Team</a></div>
+      <div class="ditem1"><a href="#anchor-services">Services</a></div>
+      <div class="ditem"><a href="#anchor-pricing">Pricing</a></div>
+      <div class="ditem"><a href="#anchor-team">Our Team</a></div>
       <div class="ditem"><a href="contact.html">Request Quote</a></div>
       <div class="ditems">
-        <input type="checkbox" id="slider2" class="slider-checkbox" />
+        <input type="checkbox" id="slider2" class="slider-checkbox">
         <label for="slider2" class="slider">
-          <span class="slider-handle"></span>
+          <span class="slider-handle"><img></span>
         </label>
       </div>
       <div class="ditem2">
-        <a href="#"
-          ><i class="bx bx-expand-vertical" style="color: #152243"></i
-        ></a>
+        <a href="#">
+          <i class="ri-close-line" color="#152243"></i>
+        </a>
       </div>
-    </div>
-    <section class="main-body-section">
-      <h1>404 Error</h1>
+    </div>   
     </section>
+
+    <div class="four0four">
+      <br>
+      <h1>404 Error</h1>
+      <p>It looks like the page you're trying to get to doesn't exist. <br><br>Sorry for the inconvenience!</p>
+      <br>
+    </div>
+    
     <section>
       <footer class="footer">
         <div class="mail-box">
@@ -116,26 +119,25 @@
               <div class="footer-col">
                 <div>              
                   <h2>Menu Links</h2>
-                  <h3>Services</h3>
-                  <h3>Pricing</h3>
-                  <h3>Our Team</h3>
-                  <h3>Request Quote</h3>
+                  <a href="#anchor-services"><h3>Services</h3></a>
+                  <a href="#anchor-pricing"><h3>Pricing</h3></a>
+                  <a href="#anchor-team"><h3>Our Team</h3></a>
+                  <a href="contact.html"><h3>Request Quote</h3></a>
                 </div>
               </div>
               <div class="footer-col">
                 <div>              
-                  <h2>Forms</h2>
-                  <h3>Form1</h3>
-                  <h3>Form2</h3>
-                  <h3>Form3</h3>
+                  <h2>Literature</h2>
+                  <a target="_blank" href="./documents/digren_services.pdf"><h3>Services</h3></a>
+                  <a target="_blank" href="./documents/digren_pricing_packages.pdf"><h3>Pricing Packages</h3></a>
                 </div>
               </div>
               <div class="footer-col">
                 <div>              
                   <h2>Follow Us</h2>
-                  <h3>Instagram</h3>
-                  <h3>Facebook</h3>
-                  <h3>LinkedIn</h3>
+                  <a href="https://www.instagram.com/digitalrenovation/" target="_blank"><h3>Instagram</h3></a>
+                  <a href="https://www.facebook.com/digren" target="_blank"><h3>Facebook</h3></a>
+                  <a href="https://www.linkedin.com/company/digitalrenovation" target="_blank"><h3>LinkedIn</h3></a>
                 </div>
               </div>
             </div>
@@ -175,38 +177,60 @@
         });
       });
 
-      //buttons
-      const toggleButton = document.getElementById("change-color");
+      //sliders for color changing
       const slider = document.getElementById("slider");
       const slider2 = document.getElementById("slider2");
+
       //items that are getting their colors changed
-      const header = document.getElementById("header");
-      const footer = document.querySelector(".footer");
-      const dropdown = document.querySelector(".dropdown");
-      const rqbutton = document.querySelector(".pink-button");
-      const logotext = document.querySelector(".D");
+      const gradiantwords = document.querySelector(".gradiant-header");
+      const gradianth1 = gradiantwords.querySelector("h1");
+      const logotext = document.querySelector('.D');
       const body = document.body;
 
       //desktop view slider
-      slider.addEventListener("click", function () {
-        body.classList.toggle("enabled");
+      slider.addEventListener('click', function() {
+        gradianth1.classList.toggle('pink-gradiant');
+        gradiantwords.classList.toggle("enabled");
+        logotext.classList.toggle('enabled');
+        body.classList.toggle('enabled');
         if (document.body.classList.contains('enabled')) {
           localStorage.setItem("savedClass", "enabled");
         } else {
           localStorage.setItem("savedClass", "disabled");
         }
-      });
+      })
 
       //mobile view slider
-      slider2.addEventListener("click", function () {
-        body.classList.toggle("enabled");
+      slider2.addEventListener('click', function() {
+        gradianth1.classList.toggle('pink-gradiant');
+        gradiantwords.classList.toggle("enabled");
+        logotext.classList.toggle('enabled');
+        body.classList.toggle('enabled');
         if (document.body.classList.contains('enabled')) {
           localStorage.setItem("savedClass", "enabled");
         } else {
           localStorage.setItem("savedClass", "disabled");
         }
-      });
-      
+      })
+
+
+      let mybutton = document.getElementById("up-btn");
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+
       (function() {
       var savedClass = localStorage.getItem('savedClass');
       var savedPosition = localStorage.getItem('sliderPosition');
