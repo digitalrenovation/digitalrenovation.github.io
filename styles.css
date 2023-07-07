@@ -469,7 +469,7 @@ body.enabled .slider-handle img {
 }
 .location-big {
   margin-top: 10vh;
-  margin-bottom: 2vh;
+  margin-bottom: 0.5vh;
   font-size: 2.5rem;
 }
 .location-small {
@@ -509,8 +509,7 @@ body.enabled .slider-handle img {
 }
 @media screen and (max-width: 1024px) {
   .location-block {
-    height: 150vh;
-    height: auto;
+    height: 105vh;
   }
   .location-row {
     height: 75vh;
